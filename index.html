@@ -3,111 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downing Laundry - Denver</title>
+    <title>Downing Laundry | Denver, CO</title>
+    <meta name="description" content="Self-Service Laundromat and Wash Dry Fold in Denver">
     <style>
-        :root {
-            --primary: #003087;
-            --accent: #28A745;
-            --light: #f8f9fa;
+        :root { --primary: #003087; --accent: #28A745; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height:1.6; color:#333; }
+        header { background: var(--primary); color:white; position:sticky; top:0; z-index:100; }
+        nav { max-width:1100px; margin:0 auto; padding:1rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+        .nav-links a { color:white; margin:0 15px; text-decoration:none; font-weight:500; }
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('hero.jpg') center/cover no-repeat; 
+            color:white; padding:160px 20px; text-align:center; min-height:500px;
         }
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; line-height:1.6; color:#333; }
-        header { background: var(--primary); color:white; padding:1rem; text-align:center; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x800?text=Downing+Laundry+Interior') center/cover; color:white; padding:120px 20px; text-align:center; }
-        section { padding:60px 20px; }
-        .pricing { background: #f8f9fa; }
-        .card { border:1px solid #ddd; padding:20px; margin:15px; border-radius:8px; text-align:center; }
+        section { padding:70px 20px; }
+        .container { max-width:1100px; margin:0 auto; }
+        .card { background:white; border:1px solid #ddd; padding:25px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+        .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:25px; }
+        img { max-width:100%; border-radius:8px; }
+        .gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:15px; }
         footer { background:#222; color:white; padding:40px 20px; text-align:center; }
-        table { width:100%; border-collapse:collapse; margin:20px 0; }
-        th, td { padding:12px; border:1px solid #ddd; text-align:left; }
-        .btn { background:var(--accent); color:white; padding:12px 30px; text-decoration:none; border-radius:5px; font-weight:bold; }
+        iframe { width:100%; height:420px; border:none; border-radius:8px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Downing Laundry</h1>
-        <p>2218 N. Downing St, Denver, CO 80205 • (720) 432-6608</p>
+        <nav>
+            <h2>Downing Laundry</h2>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#location">Location</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="tel:7204326608" style="color:white; font-weight:bold;">(720) 432-6608</a>
+        </nav>
     </header>
 
     <section class="hero">
-        <h1 style="font-size:3rem;">Laundry Excellence</h1>
-        <p style="font-size:1.5rem;">Experience the Ultimate in Convenience and Quality Today!</p>
-        <p><strong>30 years of Laundry Excellence & Experience</strong><br>No job is too large or too small.</p>
-        <a href="#contact" class="btn">Get In Touch</a>
+        <div class="container">
+            <h1 style="font-size:3.4rem;">Laundry Excellence in Denver</h1>
+            <p style="font-size:1.5rem;">30 Years Experience • Self-Service & Professional Service</p>
+            <a href="#contact" style="background:#28A745; color:white; padding:14px 30px; text-decoration:none; border-radius:6px; display:inline-block; margin-top:20px;">Get In Touch</a>
+        </div>
     </section>
 
+    <!-- Replace these with your actual image filenames -->
     <section>
-        <h2 style="text-align:center;">Put Us To Work For You</h2>
-        <p style="text-align:center;max-width:800px;margin:0 auto;">Let us help you on your next laundry project.</p>
+        <div class="container">
+            <img src="interior.jpg" alt="Downing Laundry Interior">
+        </div>
     </section>
 
-    <section class="pricing">
-        <h2 style="text-align:center;">Pricing Options</h2>
-        <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
-            <div class="card">
-                <h3>Wash, Dry & Fold Service</h3>
-                <h2 style="color:var(--accent);">$2.00 / Lb</h2>
-                <p>Let us do the dirty work.</p>
-            </div>
-            <div class="card">
-                <h3>Wash N Go (No Fold)</h3>
-                <h2 style="color:var(--accent);">$1.50 / Lb</h2>
-                <p>We do the heavy lifting.</p>
-            </div>
-            <div class="card">
-                <h3>King/Queen Comforter</h3>
-                <h2 style="color:var(--accent);">$30.00 Each</h2>
-                <p>(Down Extra)</p>
+    <section id="services">
+        <div class="container">
+            <h2 style="text-align:center;">Our Services</h2>
+            <div class="grid">
+                <div class="card"><h3>Self-Service Laundry</h3><p>Modern high-capacity machines available daily.</p></div>
+                <div class="card"><h3>Wash, Dry & Fold</h3><p>Professional drop-off service.</p></div>
             </div>
         </div>
-        <p style="text-align:center;">Please call for additional pricing and specials.</p>
     </section>
 
+    <section id="pricing" style="background:#f8f9fa;">
+        <div class="container">
+            <h2 style="text-align:center;">Pricing</h2>
+            <div class="grid">
+                <div class="card"><h3>Wash, Dry & Fold</h3><h2 style="color:var(--accent);">$2.00 / lb</h2></div>
+                <div class="card"><h3>Wash N Go</h3><h2 style="color:var(--accent);">$1.50 / lb</h2></div>
+                <div class="card"><h3>Comforters</h3><h2 style="color:var(--accent);">$30 each</h2></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
     <section>
-        <h2 style="text-align:center;">Our Equipment</h2>
-        <ul style="max-width:700px;margin:0 auto;">
-            <li>3 Giant 80 Lb. Washers</li>
-            <li>7 × 40 Lb. Washers</li>
-            <li>20 × 30 Lb. Washers</li>
-            <li>18 Lb. Single Load Washers</li>
-            <li>3 × 80 Lb. Dryers + 48 × 30 Lb. Dryers</li>
-        </ul>
-        <p style="text-align:center;">We accept Credit Cards, Apple Pay, Google Pay, and Coins.</p>
+        <div class="container">
+            <h2 style="text-align:center;">Our Facility</h2>
+            <div class="gallery">
+                <img src="machine1.jpg" alt="Washing Machines">
+                <img src="machine2.jpg" alt="Dryers">
+                <img src="folding.jpg" alt="Wash Dry Fold">
+                <img src="interior2.jpg" alt="Laundry Interior">
+            </div>
+        </div>
     </section>
 
-    <section style="background:#f8f9fa;">
-        <h2 style="text-align:center;">Testimonials</h2>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:1000px;margin:0 auto;">
-            <div class="card">"Clean, bright commercial laundry with friendly attendants." — Sophia B.</div>
-            <div class="card">"Large washers and dryers for the largest jobs." — Angela S.</div>
-            <div class="card">"Wash, Dry & Fold completed with care." — Mr. & Mrs. Davis</div>
+    <section id="location">
+        <div class="container">
+            <h2 style="text-align:center;">Find Us</h2>
+            <p style="text-align:center;">2218 N. Downing St, Denver, CO 80205</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.5!2d-104.975!3d39.747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f5f5f5f5f5f%3A0x1234567890abcdef!2s2218+N+Downing+St%2C+Denver%2C+CO+80205" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
     <section id="contact">
-        <h2 style="text-align:center;">Contact Us</h2>
-        <div style="max-width:600px;margin:0 auto;">
-            <p><strong>Downing Laundry</strong><br>
-            2218 N. Downing St, Denver, Colorado 80205<br>
-            Phone: (720) 432-6608<br>
-            Email: info@downinglaundry.com<br>
-            Hours: 7:00 AM - 8:30 PM Daily (Last Wash 7:30 PM)</p>
-
-            <!-- Simple Contact Form -->
-            <form action="https://formspree.io/f/your-email-here" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:10px 0;">
-                <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:10px;margin:10px 0;">
-                <input type="tel" name="phone" placeholder="Phone" style="width:100%;padding:10px;margin:10px 0;">
-                <textarea name="message" placeholder="Message or Service Needed" rows="5" style="width:100%;padding:10px;margin:10px 0;"></textarea>
-                <button type="submit" class="btn" style="width:100%;">Send Message</button>
+        <div class="container">
+            <h2 style="text-align:center;">Contact Us</h2>
+            <form action="https://formspree.io/f/your-email-here" method="POST" style="max-width:700px; margin:0 auto;">
+                <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:12px; margin:8px 0;">
+                <input type="email" name="email" placeholder="Email" required style="width:100%; padding:12px; margin:8px 0;">
+                <textarea name="message" placeholder="Message" rows="6" required style="width:100%; padding:12px; margin:8px 0;"></textarea>
+                <button type="submit" style="width:100%; padding:14px; background:#28A745; color:white; border:none; border-radius:6px; cursor:pointer;">Send Message</button>
             </form>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2026 Downing Laundry • 2218 N. Downing St, Denver, CO 80205 • (720) 432-6608</p>
-        <p>Serving Rhino, Park Hill, City Park, Five Points, Colfax & surrounding areas.</p>
     </footer>
-
 </body>
 </html>
