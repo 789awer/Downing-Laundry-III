@@ -185,21 +185,42 @@
                     <i class="fas fa-directions"></i> Get Directions
                 </a>
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.47!2d-104.9779!3d39.7473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f5f5f5f5f5f5f%3A0x0!2s2218+N+Downing+St%2C+Denver%2C+CO+80205!5e0!3m2!1sen!2sus!4v1720000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.47!2d-104.9779!3d39.7473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f5f5f5f5f5f%3A0x0!2s2218+N+Downing+St%2C+Denver%2C+CO+80205!5e0!3m2!1sen!2sus!4v1720000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
     <section id="faq" style="background:#f8f9fa;">
         <div class="container">
             <h2 style="text-align:center;">Frequently Asked Questions</h2>
-            <!-- All 7 questions here (same as before) -->
-            <div class="faq-item"><div class="faq-question">1. Do you offer same-day service? <span class="toggle-icon">+</span></div><div class="faq-answer">Yes! Drop off by 6:00 PM for same-day service.</div></div>
-            <div class="faq-item"><div class="faq-question">2. What are your hours? <span class="toggle-icon">+</span></div><div class="faq-answer">Open daily 7:00 AM – 8:30 PM. Last wash at 7:30 PM.</div></div>
-            <div class="faq-item"><div class="faq-question">3. Do you accept credit cards? <span class="toggle-icon">+</span></div><div class="faq-answer">Yes, we accept Credit Cards, Apple Pay, Google Pay, and Coins.</div></div>
-            <div class="faq-item"><div class="faq-question">4. What is the minimum load for drop-off service? <span class="toggle-icon">+</span></div><div class="faq-answer">Usually 8 lbs minimum for Wash, Dry & Fold.</div></div>
-            <div class="faq-item"><div class="faq-question">5. Can I do large items like comforters? <span class="toggle-icon">+</span></div><div class="faq-answer">Yes, we have large washers and dryers perfect for bulky items.</div></div>
-            <div class="faq-item"><div class="faq-question">6. Is there parking available? <span class="toggle-icon">+</span></div><div class="faq-answer">Yes, convenient parking right in front of the store.</div></div>
-            <div class="faq-item"><div class="faq-question">7. Do you offer commercial or industrial accounts? <span class="toggle-icon">+</span></div><div class="faq-answer">Please call us at (720) 432-6608 for special business accounts.</div></div>
+            
+            <div class="faq-item">
+                <div class="faq-question">1. Do you offer same-day service? <span class="toggle-icon">+</span></div>
+                <div class="faq-answer">Yes! Drop off by 6:00 PM for same-day Wash, Dry & Fold service.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">2. What are your hours? <span class="toggle-icon">+</span></div>
+                <div class="faq-answer">We are open daily from 7:00 AM to 8:30 PM. Last wash is at 7:30 PM.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">3. Do you accept credit cards? <span class="toggle-icon">+</span></div>
+                <div class="faq-answer">Yes, we accept Credit Cards, Apple Pay, Google Pay, and Coins.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">4. What is the minimum load for drop-off service? <span class="toggle-icon">+</span></div>
+                <div class="faq-answer">Usually 8 lbs minimum for Wash, Dry & Fold.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">5. Can I do large items like comforters? <span class="toggle-icon">+</span></div>
+                <div class="faq-answer">Yes, we have large washers and dryers perfect for bulky items.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">6. Is there parking available? <span class="toggle-icon">+</span></div>
+                <div class="faq-answer">Yes, we have convenient parking right in front of the store.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">7. Do you offer commercial or industrial accounts? <span class="toggle-icon">+</span></div>
+                <div class="faq-answer">Please call us at (720) 432-6608 for special business accounts.</div>
+            </div>
         </div>
     </section>
 
@@ -229,6 +250,7 @@
     </footer>
 
     <script>
+        // Interactive FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const answer = question.nextElementSibling;
