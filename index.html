@@ -32,6 +32,21 @@
         img { max-width:100%; border-radius:8px; }
         iframe { width:100%; height:420px; border:none; border-radius:8px; }
 
+        /* Facility Gallery Animation */
+        .gallery img {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .gallery img.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
         /* FAQ Accordion */
         .faq-item {
             margin-bottom: 15px;
@@ -250,6 +265,19 @@
     </footer>
 
     <script>
+        // Facility Gallery Animation
+        function animateGallery() {
+            const images = document.querySelectorAll('.gallery img');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.15 });
+            images.forEach(img => observer.observe(img));
+        }
+
         // Interactive FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
@@ -267,6 +295,9 @@
                 icon.textContent = answer.classList.contains('show') ? '−' : '+';
             });
         });
+
+        // Initialize animations
+        window.addEventListener('load', animateGallery);
     </script>
 </body>
 </html>
